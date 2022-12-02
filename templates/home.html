@@ -1,0 +1,23 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> TITANIC SURVIVED PREDICTION </h1><br>
+        
+        <form method="POST", action="{{url_for('pred')}}">
+           <b> Pclass :  <input type="text", name='Pclass', placeholder="1-3"> <br><br>
+            Gender :  <input type="text", name='Gender', placeholder="1-male/0-female"> <br><br>
+            Age :  <input type="text", name='Age', placeholder="in year"> <br><br>
+            Parch :  <input type="text", name='Parch', placeholder="0-6"> <br><br>
+            Fare :  <input type="text", name='Fare', placeholder="$"> <br><br>
+            Embarked : <input type="text", name='Embarked', placeholder="1-3"> <br><br><br></b>
+            <input type="submit" , value='PREDICT' >
+        </form>
+
+        <img src='Static\titanic.jpg' alt="titanic">
+        
+    </center>
+
+    </body>
+</html>
